@@ -29,7 +29,7 @@ A Chrome browser extension that allows you to pin important chats in Facebook Me
      ├── background.js
      ├── styles.css
      ├── popup.html
-     ├── popup.js
+     └── popup.js
      ```
 
 2. **Enable Developer Mode in Chrome**
@@ -125,12 +125,7 @@ messenger-pin-extension/
 ├── background.js         # Service worker
 ├── styles.css           # Pin button styling
 ├── popup.html           # Extension popup interface
-├── popup.js             # Popup functionality
-└── icons/               # Extension icons
-    ├── pin-16.png
-    ├── pin-32.png
-    ├── pin-48.png
-    └── pin-128.png
+└── popup.js             # Popup functionality
 ```
 
 ### Key Features Implementation
