@@ -1,48 +1,46 @@
-Facebook Messenger Chat Pin Extension
+📌 Facebook Messenger Chat Pin Extension
 
-A lightweight browser extension to pin your favorite chats in Facebook Messenger.
+Pin your chats. Stay organized. Never lose track.
 
 ⚠️ Works only on: facebook.com/messages
 
-🚀 Features
+🌟 Features
 
-Pin any chat in Facebook Messenger for quick access.
+📌 Pin any chat for instant access
 
-Keep your important conversations always at the top.
+🔝 Keep important conversations always at the top
 
-Simple, lightweight, and easy to use.
+⚡ Lightweight, fast, and easy to use
 
-🛠 Installation
+🎯 Minimalist design, zero distractions
+
+🚀 Installation
 
 Clone or download this repository.
 
-Open your browser and navigate to Extensions.
+Open your browser Extensions page.
 
 Enable Developer Mode.
 
-Click Load unpacked and select the extension folder.
+Click Load unpacked → select the extension folder.
 
 Go to facebook.com/messages
- and enjoy pinning your chats!
+ → start pinning your chats!
 
-💡 Usage
+💡 How It Works
 
-Open Facebook Messenger in your browser.
+Hover over a chat → click the pin icon → chat moves to the top.
 
-Hover over a chat in your chat list.
+Pin as many chats as you like for quick access.
 
-Click the pin button added by the extension.
+🤝 Contributing
 
-The chat will move to the top of your list for easy access.
+Report bugs or suggest features via GitHub issues.
 
-🛠 Contributing
+Pull requests are welcome!
 
-Contributions are welcome! You can:
-
-Open issues for bugs or suggestions.
-
-Submit pull requests to improve the extension.
+Ideas to make it faster, cleaner, or prettier? Let’s build it together.
 
 📄 License
 
-This project is licensed under the MIT License – free to use, modify, and share.
+MIT License – free to use, modify, and share.
