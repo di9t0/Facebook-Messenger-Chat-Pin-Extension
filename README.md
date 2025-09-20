@@ -3,6 +3,8 @@
 **Keep your important Facebook Messenger chats always at the top!**  
 A lightweight Chrome extension that lets you pin and organize chats for faster access and a cleaner interface.
 
+![Version](https://img.shields.io/badge/version-1.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Stars](https://img.shields.io/github/stars/di9t0/Facebook-Messenger-Chat-Pin-Extension?style=social)
+
 ---
 
 ## ✨ Features
@@ -15,6 +17,7 @@ A lightweight Chrome extension that lets you pin and organize chats for faster a
 - **Dark/Light Mode Compatible** – Fully adapts to Facebook’s theme.  
 
 ---
+
 
 ## 🛠️ Installation
 
