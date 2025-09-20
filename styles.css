@@ -1,0 +1,177 @@
+
+/* Facebook Messenger Pin Extension - Styles */
+
+.pin-chat-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 1000;
+  opacity: 0.7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pin-chat-btn:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+}
+
+.pin-chat-btn svg {
+  color: #65676b;
+  transition: color 0.2s ease;
+}
+
+.pin-chat-btn:hover svg {
+  color: #1877f2;
+}
+
+.pin-chat-btn.pinned {
+  background: #1877f2;
+  opacity: 0.9;
+}
+
+.pin-chat-btn.pinned:hover {
+  background: #166fe5;
+  opacity: 1;
+}
+
+.pin-chat-btn.pinned svg {
+  color: white;
+}
+
+.pin-chat-btn.pinned:hover svg {
+  color: white;
+}
+
+/* Pinned chat indicator */
+.pinned-chat {
+  background: linear-gradient(90deg, rgba(24, 119, 242, 0.05) 0%, rgba(24, 119, 242, 0.02) 100%) !important;
+  border-left: 3px solid #1877f2 !important;
+}
+
+.pinned-chat::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #1877f2 0%, rgba(24, 119, 242, 0.5) 100%);
+  z-index: 1;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .pin-chat-btn {
+    background: rgba(36, 37, 38, 0.9);
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+  }
+
+  .pin-chat-btn:hover {
+    background: rgba(36, 37, 38, 1);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
+  }
+
+  .pin-chat-btn svg {
+    color: #e4e6ea;
+  }
+
+  .pinned-chat {
+    background: linear-gradient(90deg, rgba(24, 119, 242, 0.1) 0%, rgba(24, 119, 242, 0.03) 100%) !important;
+  }
+}
+
+/* Facebook's dynamic class handling */
+[role="gridcell"]:hover .pin-chat-btn,
+[role="row"]:hover .pin-chat-btn,
+.pin-chat-btn.pinned {
+  opacity: 1;
+}
+
+/* Ensure pin button shows on mobile/touch devices */
+@media (hover: none) {
+  .pin-chat-btn {
+    opacity: 0.8;
+  }
+}
+
+/* Animation for pin/unpin action */
+@keyframes pinAnimation {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.2) rotate(180deg); }
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+.pin-chat-btn.animating {
+  animation: pinAnimation 0.4s ease-in-out;
+}
+
+/* Ensure button doesn't interfere with chat interactions */
+.pin-chat-btn {
+  pointer-events: all;
+}
+
+[role="link"]:hover .pin-chat-btn {
+  display: flex;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .pin-chat-btn {
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .pin-chat-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .pin-chat-btn {
+    border: 2px solid;
+    background: white;
+  }
+
+  .pin-chat-btn.pinned {
+    background: #0066cc;
+    border-color: #0066cc;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .pin-chat-btn {
+    transition: none;
+  }
+
+  .pin-chat-btn.animating {
+    animation: none;
+  }
+}
+
+/* Focus styles for accessibility */
+.pin-chat-btn:focus {
+  outline: 2px solid #1877f2;
+  outline-offset: 2px;
+}
+
+/* Ensure proper layering in Facebook's complex layout */
+.pin-chat-btn {
+  z-index: 9999 !important;
+}
